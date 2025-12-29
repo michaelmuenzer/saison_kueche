@@ -12,6 +12,13 @@ const tailwindColors = Object.fromEntries(
   ]),
 );
 
+const seasonalColors = {
+  spring: '#A4D65E',
+  summer: '#FFD700',
+  autumn: '#E67E22',
+  winter: '#5DADE2',
+};
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
