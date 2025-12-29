@@ -43,3 +43,13 @@
 - [x] Verify app.config.ts has correct branding
 - [x] Generate app icon and update assets
 - [ ] Create checkpoint before publishing
+
+
+## AI Recipe Generation (New)
+- [x] Create tRPC router for AI recipe generation
+- [x] Implement LLM integration for recipe generation
+- [x] Create AI recipe generation screen/modal
+- [x] Add prompt engineering for consistent recipe format
+- [x] Handle LLM loading states and errors
+- [x] Create AI recipe generation hook
+- [x] Test AI recipe generation with comprehensive test suite

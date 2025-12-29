@@ -2,7 +2,7 @@ import { ScrollView, Text, View, Pressable } from "react-native";
 import { useState } from "react";
 import { useRouter } from "expo-router";
 import { ScreenContainer } from "@/components/screen-container";
-import { PrimaryButton } from "@/components/recipe-components";
+import { PrimaryButton, SecondaryButton } from "@/components/recipe-components";
 import {
   Region,
   regions,
@@ -139,6 +139,17 @@ export default function HomeScreen() {
             />
             <Text className="text-xs text-muted text-center">
               Get a random {currentSeason.toLowerCase()} recipe from {selectedRegion}
+            </Text>
+          </View>
+
+          {/* AI Recipe Generator Button */}
+          <View className="gap-3 pt-2">
+            <SecondaryButton
+              title="✨ Try AI Recipe Generator"
+              onPress={() => router.push("/ai-recipe-generator")}
+            />
+            <Text className="text-xs text-muted text-center">
+              Create unique recipes powered by AI
             </Text>
           </View>
         </View>
